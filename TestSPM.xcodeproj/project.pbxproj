@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		67BD0C9F23C3883E004ECCC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BD0C9D23C3883E004ECCC4 /* Main.storyboard */; };
 		67BD0CA123C38843004ECCC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BD0CA023C38843004ECCC4 /* Assets.xcassets */; };
 		67BD0CA423C38843004ECCC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BD0CA223C38843004ECCC4 /* LaunchScreen.storyboard */; };
+		67BD0CBF23C391B9004ECCC4 /* ExamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 67BD0CBE23C391B9004ECCC4 /* ExamplePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BD0CBF23C391B9004ECCC4 /* ExamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestSPM;
+			packageProductDependencies = (
+				67BD0CBE23C391B9004ECCC4 /* ExamplePackage */,
+			);
 			productName = TestSPM;
 			productReference = 67BD0C9423C3883E004ECCC4 /* TestSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 67BD0C8B23C3883E004ECCC4;
+			packageReferences = (
+				67BD0CBD23C391B9004ECCC4 /* XCRemoteSwiftPackageReference "ExamplePackage" */,
+			);
 			productRefGroup = 67BD0C9523C3883E004ECCC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67BD0CBD23C391B9004ECCC4 /* XCRemoteSwiftPackageReference "ExamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yanaMyn/ExamplePackage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67BD0CBE23C391B9004ECCC4 /* ExamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67BD0CBD23C391B9004ECCC4 /* XCRemoteSwiftPackageReference "ExamplePackage" */;
+			productName = ExamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67BD0C8C23C3883E004ECCC4 /* Project object */;
 }
